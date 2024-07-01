@@ -16,3 +16,25 @@ export const membershipTypes = {
 
 //forgot-password//
 export const forgotPasswordStepAtom = atom(1);
+
+
+
+
+//****************//
+//*****Auth*******//
+//****************//
+
+export const profileAtom = atom({
+    fullName: "",
+    imageSrc: "",
+    pronouns: "",
+    email: "",
+    birthDate: "",
+    phoneNumber: ""
+})
+
+//////////////
+/////NAV//////
+//////////////
+
+export const IsNavOpenAtom = atom(false)

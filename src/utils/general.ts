@@ -19,6 +19,14 @@ export const aboutScholarshipNavigation = {
     whosEligible: "who's eligible"
 }
 
+export const settingsNavigation = {
+    profile: "Profile",
+    membership: "Membership",
+    paymentMethods: "PaymentMethods",
+    notification: "Notification",
+    timeSpent: "TimeSpent"
+}
+
 
 export const testPassword = (password: string) =>{
     const lowerCase = /[a-z]/.test(password)
@@ -27,3 +35,22 @@ export const testPassword = (password: string) =>{
     const symbolCase = /[!@#$%^&*()\[_\]+={}.'"~²`%¨)°:,?§/-]/.test(password)
     return {correctLength: password.length >= 12, lowerCase, upperCase, numberCase, symbolCase}
 }
+
+/*************/
+/***Profile***/
+/*************/
+
+export const profile = { // to be removed after BE Integration
+    fullName: "Jack Stuart",
+    imageSrc: "/ToBeRemoved/avatar/1.svg",
+    pronouns: "Hi/Him/His",
+    email: "jacks@email.com",
+    birthDate: "2000-12-24",
+    phoneNumber: "1-234-567-8910"
+}
+
+export const pronouns = [
+    "She/Her/Hers",
+    "Hi/Him/His",
+    "They/Them/Theirs"
+]
